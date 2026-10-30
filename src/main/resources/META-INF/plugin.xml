@@ -1,0 +1,17 @@
+<idea-plugin>
+    <id>chopper</id>
+    <name>Chopper</name>
+    <vendor>Jalen Muller</vendor>
+    <description><![CDATA[
+        Toggles PHP parameter lists, argument lists, <code>implements</code> lists and closure <code>use</code> lists
+        between one line and one item per line.
+    ]]></description>
+
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.jetbrains.php</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- First, so PhpStorm's array-only context does not claim the array a call or parameter list sits in. -->
+        <listSplitJoinContext language="PHP" order="first" implementationClass="chopper.PhpListSplitJoinContext"/>
+    </extensions>
+</idea-plugin>
