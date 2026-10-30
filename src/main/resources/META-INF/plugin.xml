@@ -1,11 +1,19 @@
 <idea-plugin>
     <id>io.github.jalenwashere.chopper</id>
     <name>Chopper</name>
-    <vendor>Jalen Muller</vendor>
+    <vendor email="jalen.muller@protonmail.com" url="https://github.com/JalenWasHere/idea-php-chopper-plugin">Jalen Muller</vendor>
     <description><![CDATA[
         Toggles PHP parameter lists, argument lists, <code>implements</code> lists and closure <code>use</code> lists
         between one line and one item per line.
     ]]></description>
+    <change-notes><![CDATA[
+        <h3>0.1.0</h3>
+        <ul>
+            <li>Split and join parameter lists, argument lists (including named and spread arguments), attribute
+                arguments, <code>implements</code>/<code>extends</code> lists and closure <code>use</code> lists.</li>
+            <li>Adds a trailing comma on split when the project's PHP language level allows it; removes it on join.</li>
+        </ul>
+    ]]></change-notes>
 
     <depends>com.intellij.modules.platform</depends>
     <depends>com.jetbrains.php</depends>
