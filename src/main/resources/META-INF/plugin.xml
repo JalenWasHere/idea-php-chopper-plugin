@@ -1,5 +1,5 @@
 <idea-plugin>
-    <id>chopper</id>
+    <id>io.github.jalenwashere.chopper</id>
     <name>Chopper</name>
     <vendor>Jalen Muller</vendor>
     <description><![CDATA[
